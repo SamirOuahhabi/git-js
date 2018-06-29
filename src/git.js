@@ -1255,6 +1255,10 @@
          command.push("--follow", options.file);
       }
 
+      if (opt.firstParent) {
+            command.push("--first-parent");
+      }
+
       'splitter n max-count file from to --pretty format'.split(' ').forEach(function (key) {
          delete opt[key];
       });
