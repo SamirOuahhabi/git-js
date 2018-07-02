@@ -1259,7 +1259,7 @@
             command.push("--first-parent");
       }
 
-      'splitter n max-count file from to --pretty format'.split(' ').forEach(function (key) {
+      'splitter n max-count firstParent file from to --pretty format'.split(' ').forEach(function (key) {
          delete opt[key];
       });
 
